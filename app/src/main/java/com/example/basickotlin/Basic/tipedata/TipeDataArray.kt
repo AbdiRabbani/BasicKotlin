@@ -1,13 +1,16 @@
 package com.example.basickotlin.Basic.tipedata
 
 fun main() {
-    val friends = arrayOf("budi", "abdi", "jo", "bedul" )
+    val friends : Array<Any> = arrayOf("budi", "abdi", "jo", "bedul" )
+
+    for (i in friends){
+        println(i) }
 
     println(friends.size) //size ini agar menghitung jumpah data pada arrayof
     println(friends.get(2)) /*get ini di gunakan untuk mengambil salah satu data
     bisa juga langsung tulis angkanya */// kaya gini friends[2]
 
-    friends.set(0,"mobil") //set ini mengganti data nomor 0, menjadi mobil
+    friends.set(0,"mobil")  //gunakan set untuk mengganti isi dari pernyataan yang di inginkan
     println(friends[0])
 
     //size untuk mendapatkan panjang array
